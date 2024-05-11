@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <!-- logo -->
+            <img src="O ET.png" class="logo" alt="">
+            <div>
+              <div class="nav-search">
+                <input placeholder="Search for Products..." class="search-input" id="product_name" name="k"  onclick="searchAmazon()">
+                <div class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              
+                <!-- navbar -->
+                <ul id="navbar-2">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a  href="shop.html">Shop</a></li>
+                    <li><a  href="blog.html">Blog</a></li>
+                    <li><a  href="about.html">About</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i> </a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            </div>
+        </section>
+
+<section id="page-header" class="shop-header">
+    <h2 style="color: black;">#stay Home</h2>
+    <p style="color: black;">save more with coupens & up to 70% off!</p>
+    
+</section>
+
+
+<section id="product1" class="section-p1">
+    
+    <div class="pro-container">
+        
+    <div class="card">
+        <div class="card-img"><div class="img"><img src="product1.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">T-shirt</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 799</div>
+            <button class="card-btn"  onclick="addToCart('T-Shirt', 799, 'product1.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><div class="img"><img src="product2.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">Sweat-shirt</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 1299</div>
+            <button class="card-btn"  onclick="addToCart('Sweat-shirt', 1299, 'product2.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><div class="img"><img src="product3.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">Shirt</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 1399</div>
+            <button class="card-btn"  onclick="addToCart('Shirt', 1399, 'product3.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><div class="img"><img src="product4.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">Formal-Shirt</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 1499</div>
+            <button class="card-btn"  onclick="addToCart('Formal-shirt', 1499, 'product4.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><div class="img"><img src="product5.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">Top</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 599</div>
+            <button class="card-btn"  onclick="addToCart('Top', 599, 'product5.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><div class="img"><img src="product6.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">Flared top</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 999</div>
+            <button class="card-btn"  onclick="addToCart('Flared-top', 999, 'product6.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><div class="img"><img src="product7.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">Crop Top</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 799 </div>
+            <button class="card-btn"  onclick="addToCart('Crop-top', 799, 'product7.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><div class="img"><img src="product8.jpg" alt="suit" class="toys"></div></div>
+        <div class="card-title">Butterfly top</div>
+        <div class="card-subtitle">This suit features a tailored fit with high-quality fabric, blending timeless style and sophistication.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>Rs</span> 400 </div>
+            <button class="card-btn"  onclick="addToCart('Butterfly-top', 400, 'product8.jpg')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+      </div>
+</section>
+
+<section id="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+</section>
+
+<section id="newsletter" class="section-m1 section-p1">
+    <div class="newstext">
+        <h4>Sign up For Newsletter</h4>
+        <p>Get Email update about our latest shop and <span>Special offers</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign up</button>
+    </div>
+</section>
+
+<footer class="section-p1">
+    <div class="col">
+        <img src="logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:- </strong>123,street 1, New Delhi</p>
+        <p><strong>Phno:- </strong>1234567891</p>
+        <p><strong>Email:- </strong>123@gmail.com</p>
+        <div class="follow">
+            <h4>follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>about</h4>
+        <a href="">About us</a>
+        <a href="">Delivery inform</a>
+        <a href="">privacy policy</a>
+        <a href="">terms & Condition</a>
+        <a href="">Contact us</a>
+    </div>
+    <div class="col">
+        <h4>My account</h4>
+        <a href="">Sign in</a>
+        <a href="">view cart</a>
+        <a href="">Track my order</a>
+        <a href="">my wishlist</a>
+        <a href="">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install app</h4>
+        <p>from App store on google play</p>
+        <div class="row">
+            <img src="app.jpg" alt="">
+            <img src="play.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <img src="pay.png" alt="">
+    </div>
+    <div class="copyright">
+        <p>GO GET STYLE E-commerce website</p>
+    </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

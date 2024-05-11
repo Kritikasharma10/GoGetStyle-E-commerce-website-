@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #cartItems li{
+            display: flex;
+            align-items: center; 
+        }
+
+        #cartItems img, span{
+            margin-right: 200px;
+        }
+
+        #cartItems img{
+            border-radius: 5px;
+        }
+
+        #cartItems button{
+            width: 80px;
+            border-radius: 2px;
+            border-color: black;
+            box-shadow: 2px 2px 5px;
+        }
+
+        #cartItems button:hover{
+            border-color: red;
+            box-shadow: 2px 2px 5px ;
+        }
+
+        #cartItems span{
+           border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="cartItems"></div>
+    <script src="cart.js"></script>
+</body>
+</html>
